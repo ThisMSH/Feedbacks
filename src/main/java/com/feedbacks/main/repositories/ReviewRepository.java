@@ -2,6 +2,8 @@ package com.feedbacks.main.repositories;
 
 import com.feedbacks.main.entities.Review;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface reviewRepository extends JpaRepository<Review, Integer> {
+@Repository
+public interface ReviewRepository extends JpaRepository<Review, Integer> {
 }

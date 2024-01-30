@@ -29,7 +29,7 @@ public class Review {
     @Column(nullable = false)
     private LocalDate date;
     @Column(nullable = false)
-    private String titre;
+    private String title;
     @Column(nullable = false)
     private String message;
     @Enumerated(EnumType.STRING)
