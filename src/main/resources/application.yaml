@@ -1,1 +1,11 @@
+server:
+  port: 8082
 
+spring:
+  data:
+    postgres:
+      username: ${SPRING_DATASOURCE_USERNAME}
+      password: ${SPRING_DATASOURCE_PASSWORD}
+      host: ${SPRING_DATASOURCE_HOST}
+      port: ${SPRING_DATASOURCE_PORT}
+      database: ${SPRING_DATASOURCE_DB}
