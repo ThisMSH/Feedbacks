@@ -1,10 +1,14 @@
 package com.feedbacks.main.services.implementation;
 
 import com.feedbacks.main.dtos.ReactionDTO;
+import com.feedbacks.main.repositories.ReactionRepository;
+import com.feedbacks.main.repositories.ReviewRepository;
+import com.feedbacks.main.repositories.UserRepository;
 import com.feedbacks.main.services.interfaces.ReactionService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +18,10 @@ import java.util.List;
 @Transactional
 @RequiredArgsConstructor
 public class ReactionServiceImpl implements ReactionService {
+    private final ModelMapper modelMapper;
+    private final ReactionRepository reactionRepository;
+    private final UserRepository userRepository;
+    private final ReviewRepository reviewRepository;
     @Override
     public List<ReactionDTO> findAll() {
         return null;
