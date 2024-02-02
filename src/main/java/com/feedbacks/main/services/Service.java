@@ -2,10 +2,10 @@ package com.feedbacks.main.services;
 
 import java.util.List;
 
-public interface Service<T, ID> {
+public interface Service<T, R, ID> {
     List<T> findAll();
     T findById(ID id);
-    T save(T object);
-    T update(ID id, T newObject);
+    T save(R object);
+    T update(ID id, R newObject);
     boolean delete(ID id);
 }

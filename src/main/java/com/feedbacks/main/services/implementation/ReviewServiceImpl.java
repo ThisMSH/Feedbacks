@@ -1,8 +1,9 @@
 package com.feedbacks.main.services.implementation;
 
-import com.feedbacks.main.dtos.ReviewDTO;
+import com.feedbacks.main.dtos.review.RequestReviewDTO;
+import com.feedbacks.main.dtos.review.ReviewDTO;
 import com.feedbacks.main.repositories.ReviewRepository;
-import com.feedbacks.main.services.ReviewService;
+import com.feedbacks.main.services.interfaces.ReviewService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -29,12 +30,12 @@ public class ReviewServiceImpl implements ReviewService {
     }
 
     @Override
-    public ReviewDTO save(ReviewDTO object) {
+    public ReviewDTO save(RequestReviewDTO object) {
         return null;
     }
 
     @Override
-    public ReviewDTO update(Integer integer, ReviewDTO newObject) {
+    public ReviewDTO update(Integer integer, RequestReviewDTO newObject) {
         return null;
     }
 
