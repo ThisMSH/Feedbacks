@@ -1,6 +1,7 @@
 package com.feedbacks.main.services.implementation;
 
 import com.feedbacks.main.dtos.ReactionDTO;
+import com.feedbacks.main.exceptions.NotFoundException;
 import com.feedbacks.main.repositories.ReactionRepository;
 import com.feedbacks.main.repositories.ReviewRepository;
 import com.feedbacks.main.repositories.UserRepository;
@@ -38,12 +39,12 @@ public class ReactionServiceImpl implements ReactionService {
     }
 
     @Override
-    public ReactionDTO update(Integer integer, ReactionDTO newObject) {
+    public ReactionDTO update(Integer integer, ReactionDTO newObject) throws NotFoundException {
         return null;
     }
 
     @Override
-    public boolean delete(Integer integer) {
+    public boolean delete(Integer integer) throws NotFoundException {
         return false;
     }
 }

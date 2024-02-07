@@ -45,12 +45,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDTO update(Integer integer, RequestUserDTO newObject) {
+    public UserDTO update(Integer integer, RequestUserDTO newObject) throws NotFoundException {
         return null;
     }
 
     @Override
-    public boolean delete(Integer integer) {
+    public boolean delete(Integer integer) throws NotFoundException {
         return false;
     }
 }
