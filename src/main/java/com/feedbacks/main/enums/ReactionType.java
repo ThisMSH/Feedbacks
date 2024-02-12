@@ -1,6 +1,6 @@
 package com.feedbacks.main.enums;
 
-public enum Reaction {
+public enum ReactionType {
     LIKE,
     HEART,
     DISLIKE

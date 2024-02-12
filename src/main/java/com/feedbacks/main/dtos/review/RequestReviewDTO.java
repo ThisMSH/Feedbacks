@@ -1,6 +1,5 @@
-package com.feedbacks.main.dtos;
+package com.feedbacks.main.dtos.review;
 
-import com.feedbacks.main.enums.Reaction;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,10 +10,9 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReviewDTO {
-    private int id;
+public class RequestReviewDTO {
     private LocalDate date;
     private String title;
     private String message;
-    private Reaction reaction;
+    private int user_id;
 }
